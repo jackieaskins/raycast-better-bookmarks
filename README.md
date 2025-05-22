@@ -1,15 +1,38 @@
-# Better Bookmarks
+# Raycast Better Bookmarks
 
-Makes searching bookmarks better
+Makes searching bookmarks in Raycast "better"
 
-## Installation
+## Usage
 
-1. Clone repository locally
+1. Clone repository
+   ```sh
+   git clone https://github.com/jackieaskins/raycast-better-bookmarks && cd raycast-better-bookmarks
+   ```
+2. Install dependencies
+   ```sh
+   npm install
+   ```
+3. Build extension
+   ```sh
+   npm run build
+   ```
+4. Find the "Search Browser Bookmarks" command within Raycast to begin searching browser bookmarks
+5. The plugin defaults to Chrome bookmarks, but can be configured through Raycast
 
-```sh
-git clone https://github.com/jackieaskins/raycast-better-bookmarks
-```
+## Development
 
-2. Build the extension
-   Open your terminal, navigate to your extension directory and run `npm install && npm run dev`.
-   Open Raycast, and you'll notice your extension at the top of the root search.
+See Raycast developer documentation: https://developers.raycast.com/
+
+1. Clone repository
+   ```sh
+   git clone https://github.com/jackieaskins/raycast-better-bookmarks && cd raycast-better-bookmarks
+   ```
+2. Install dependencies
+   ```sh
+   npm install
+   ```
+3. Start dev server
+   ```sh
+   npm run dev
+   ```
+4. Make updates to the extension code and see them automatically reflected in Raycast while the dev server is running
