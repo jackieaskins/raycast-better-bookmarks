@@ -1,7 +1,7 @@
 import { homedir } from "os";
 import { Bookmark, BookmarkData, BookmarkFile, Browser } from "../types";
 import { getPreferenceValues } from "@raycast/api";
-import { readdirSync, statSync } from "fs";
+import { readdirSync, lstatSync } from "fs";
 import { readFile } from "fs/promises";
 import path from "path";
 
@@ -46,7 +46,7 @@ function findBookmarkDirectories(basePath: string) {
     }))
     .filter(
       ({ profileName, profilePath }) =>
-        statSync(profilePath).isDirectory() &&
+        lstatSync(profilePath).isDirectory() &&
         (profileName === "Default" || profileName.startsWith("Profile ")),
     )
     .map(({ profileName, profilePath }) => ({
