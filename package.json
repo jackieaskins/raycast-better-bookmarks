@@ -34,17 +34,19 @@
       "mode": "view"
     }
   ],
+  "dependencies": {
+    "@raycast/api": "^1.99.0",
+    "@raycast/utils": "^1.19.1"
+  },
   "devDependencies": {
-    "@raycast/api": "^1.82.3",
     "@raycast/eslint-config": "^1.0.11",
-    "@raycast/utils": "^1.17.0",
-    "@types/node": "20.8.10",
-    "@types/react": "18.3.3",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.35.2",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
   },
   "scripts": {
     "build": "ray build -e dist",

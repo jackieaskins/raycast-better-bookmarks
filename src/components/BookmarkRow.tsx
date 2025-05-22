@@ -11,7 +11,7 @@ const MAX_LENGTH = 50;
 
 export default function BookmarkRow({
   bookmark: { name, folderPath, url, fullPath },
-}: BookmarkRowProps): JSX.Element {
+}: BookmarkRowProps) {
   const subtitle = useMemo(
     () => (url.length > MAX_LENGTH ? `${url.slice(0, MAX_LENGTH)}...` : url),
     [url],
